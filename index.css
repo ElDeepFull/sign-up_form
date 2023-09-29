@@ -71,6 +71,11 @@
     width: 500px;
   }
 
+  legend{
+    font-weight: bold;
+    font-size: 18px;
+  }
+
 
   .form-card{
     display: flex;
