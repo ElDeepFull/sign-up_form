@@ -1,0 +1,98 @@
+*{
+     box-sizing: border-box;
+     margin: 0; 
+}
+@font-face{
+    font-family: logoFont;
+    src: url("./asset/Norse-Bold.otf");
+}
+
+.container{
+    display: flex; 
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.left-side {
+    background-image: url("bg_image.jpg");
+    background-color: blue;
+    height: 800px;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  div.logo > img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #5e5a5aa3;
+  }
+
+  div.logo > h2{
+
+    font-family: logoFont;
+    font-size: 56px;
+    color: white;
+  }
+  div.left-side > p{
+    position: relative;
+  }
+
+  .title > p{
+    font-weight: bold;
+    margin: 8px;
+  }
+
+
+  .form-card{
+    display: flex;
+    gap : 56px;
+  }
+
+  .form-left{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn{
+    margin: 16px;
+    padding: 16px;
+  }
+
+
+
+  .btn > button{
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 16px;
+    background-color: #596D48;
+  }
