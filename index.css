@@ -45,7 +45,6 @@
     align-items: center;
     gap: 5px;
     background: #5e5a5aa3;
-    /* margin: 16px; */
     padding: 12px;
   }
 
@@ -117,9 +116,9 @@
     background-color: #596D48;
   }
 
-  /* button:valid{
+  button:valid{
     border-color: green;
-  } */
+  }
 
   button:invalid{
     border-color: red;
@@ -127,4 +126,10 @@
 
  p{
   margin: 16px;
+ }
+ a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #596D48; 
  }
