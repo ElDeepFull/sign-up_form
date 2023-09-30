@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Main content -->
    <main class="container">
-    <div class="left-side">
+    <div class=" container left-side">
         <div class="logo">
             <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo">
             <h2>ONDI</h2>
         </div> 
     </div>
-    <div class="right-side">
+    <div class="container right-side">
         <div class="title">
             <p> This is not a real online service! You know need something <br>
                 like this in your life to help you realize your deepest dreams <br>
@@ -22,41 +23,41 @@
             </p>
             <p >You <span>know</span> what you want</p>
         </div>
-        <p style=" margin-bottom: 16px;">Let's do this!</p>
+        <p style=" margin-left: 24px;">Let's do this!</p>
+
+        <!-- Form content -->
         <fieldset>
             <legend>Create account</legend>
-            <div class="form-card">
-                <div class="form-left">
-                    <label for="first_name">First name</label>
-                    <input type="text" name="first_name" id="first_name">
-    
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-    
-                    <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
+            <div class="form">
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="form left">
+                        <label for="first_name">*First name</label>
+                        <input type="text" name="first_name" id="first_name" required placeholder="Agbonon">
+        
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required placeholder="contact@email.com">
+        
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password" required placeholder="********" minlength="8" maxlength="15">
+                    </div>
+                    <div class="form right">
+                        <label for="last_name">Last name</label>
+                        <input type="text" name="last_name" id="last_name" required placeholder="Afolaby">
+        
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone" min="1" required placeholder="002250101010101">
+        
+                        <label for="password">Confirm password</label>
+                        <input type="text" name="password" id="password" required placeholder="********">
+                    </div>
                 </div>
-                <div class="form-right">
-                    <label for="">Last name</label>
-                    <input type="text" name="" id="">
-    
-                    <label for="">Phone number</label>
-                    <input type="text" name="" id="">
-    
-                    <label for="">Confirm password</label>
-                    <input type="text" name="" id="">
-                </div>
-            </div>
-        </fieldset>
-        <div class="btn">
-            <a href="#">
-                 Create Account
-                <!-- <button>Create Account</button> -->
-            </a>   
+                </fieldset>
+                    <button type="submit">Create Account</button>
+                </form>              
         <p>
             Already have an account? <a href="#">Login</a>
         </p>
-        </div>     
+
    </main>
 <script src="index.js"></script>
 </body>
